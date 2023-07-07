@@ -5,7 +5,7 @@
 I# basis set: 6-31+G*
 basis		6-31+G*
 # coordinates file
-coordinates	CV_Cl_vacuum.xyz
+coordinates	CV_Cl.xyz
 # molecule charge
 charge          0
 method		wb97x
