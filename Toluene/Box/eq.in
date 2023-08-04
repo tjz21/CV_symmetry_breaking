@@ -1,0 +1,33 @@
+EQUILIBRATION
+&cntrl
+   imin=0,           ! DEFAULT: Molecular Dynamics
+   ! Nature and format of the input
+      ntx=5,         ! Coordinates and velocities are read formatted, box info are read if ntb>0
+      irest=1,       ! Restart calculation (requires velocities in .rst input file)
+   ! Nature and format of the output
+      ntpr=200,      ! Steps for energy info in .out and .info
+      ntwr=1000,     ! Steps for restart file (.rst)
+      ntwx=500,      ! Steps for coordinates file (.crd)
+      ntwe=500,      ! Steps for energy file (.en)
+   ! Potential function
+      ntf=2,         ! Bond interactions involving H-atoms omitted (to use with ntc=2)
+      ntb=2,         ! Periodic boundary conditions with constant pressure
+      cut=10.0,      ! Non Bounded cutoff in Angstrom (DEFAULT 8.0)
+   ! frozen on restrained atoms
+      ntr=0,         ! DEFAULT: No position restraint
+   ! Molecular dynamics
+      nstlim=300000, ! MD steps
+      dt=0.001,      ! DEFAULT: Time step
+   ! Temperature regulation
+      ntt=3,         ! Langevin dynamics thermostat
+      gamma_ln=1.0,  ! Collision frequency of Langevin dynamics
+      ig=71277,      ! DEFAULT: Seed for pseudo number generator: change it at each restart!
+      temp0=300.0,   ! Reference temperature
+   ! Shake bond length constraints(only for MD)
+      ntc=2,         ! Bonds involving hydrogens are constrained
+   ! Pressure regulation
+      ntp=1,         ! Isotropic position scaling for constant pressure dynamics
+      pres0=1.0,     ! DEFAULT: Reference pressure (in atm)
+      taup=2.0       ! Pressure relaxation time (in ps)
+/
+

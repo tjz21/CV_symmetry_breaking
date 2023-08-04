@@ -1,0 +1,35 @@
+HEATING
+&cntrl
+   imin=0,           ! DEFAULT: Molecular Dynamics
+   ! Nature and format of the input
+      ntx=1,         ! DEFAULT: Coordinates are read formatted with no initial V
+      irest=0,       ! DEFAULT: No restart
+   ! Nature and format of the output
+      ntpr=200,      ! Steps for energy info in .out and .info
+      ntwr=1000,     ! Steps for restart file (.rst)
+      ntwx=500,      ! Steps for coordinates file (.crd)
+      ntwe=500,      ! Steps for energy file (.en)
+   ! Potential function
+      ntf=2,         ! Bond interactions involving H-atoms omitted (to use with ntc=2)
+      ntb=1,         ! DEFAULT: Periodic boundary conditions with constant volume
+      cut=10.0,      ! Non Bounded cutoff in Angstrom (DEFAULT 8.0)
+   ! Frozen on restrained atoms
+      ntr=1,         ! Position restraint
+   ! Molecular dynamics
+      nstlim=300000, ! MD steps (at least > 10 ps, the relaxation time of water)
+      dt=0.001,      ! DEFAULT: Time step
+   ! Temperature regulation
+      ntt=3,         ! Langevin dynamics thermostat
+      gamma_ln=1.0,  ! Collision frequency of Langevin dynamics
+      ig=71277,      ! DEFAULT: Seed for pseudo number generator: change it at each restart!
+      temp0=300.0,   ! Reference temperature
+      tempi=0.0,     ! Starting temperature
+   ! Shake bond length constraints(only for MD)
+      ntc=2,         ! Bonds involving hydrogens are constrained
+   ! Pressure regulation
+      ntp=0,         ! DEFAULT: No pressure scaling
+      pres0=1.0,     ! DEFAULT: Reference pressure (in atm)
+      taup=0.2       ! Pressure relaxation time (in ps)   
+/
+
+
