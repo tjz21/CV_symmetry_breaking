@@ -1,0 +1,20 @@
+# MD Simulation on the ground state PES
+# At every single time step, a TDDFT 
+# calculation is performed and the excited 
+# state energy printed
+I# basis set: 6-31+G*
+basis		6-31+G*
+# coordinates file
+coordinates	CVCl_opt.xyz
+# molecule charge
+charge          0
+method		wb97x
+run		md
+threall 1.0e-14
+convthre  1.0e-5
+nstep           10000
+timestep        0.5
+thermostat      langevin
+t0      300.0
+end
+
