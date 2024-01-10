@@ -1,0 +1,504 @@
+Startfile from command line: mb.in
+
+
+       ***********************************************************
+       *                    TeraChem v1.9-2021.05-dev            *
+       *                 Hg Version: f53a2e5297ef+               *
+       *                   Development Version                   *
+       *           Chemistry at the Speed of Graphics!           *
+       ***********************************************************
+       * This program may only be used in connection with        *
+       * a valid license from PetaChem, LLC. Use of this program *
+       * or results thereof indicates acceptance of all terms    *
+       * and conditions stated in the license and that a valid   *
+       * license agreement between the user and PetaChem, LLC    *
+       * exists. PetaChem, LLC does not warrant the correctness  *
+       * of results or their suitability for any purpose.        *
+       * Please email bugs, suggestions, and comments to         *
+       *                  help@petachem.com                      *
+       *                                                         *
+       ***********************************************************
+
+
+       ***********************************************************
+       *  Compiled by zuehlsdt     Thu May 27 13:06:02 PDT 2021  *
+       *  Supported architectures: sm_70 sm_75 sm_80 sm_86       *
+       *  Build cuda_11.1.TC455_06.29069683_0                    *
+       ***********************************************************
+
+
+ Job started   Tue Oct  4 02:45:36 2022
+ On zuehlsdorff003 (available memory: 96086 MB)
+
+######################################### RUNTIME INFO ##########################################
+terachem mb.in 
+
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  460.80  Fri May  7 06:55:54 UTC 2021
+GCC version:  gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
+
+	linux-vdso.so.1 =>  (0x00002aaaaaacd000)
+	libiomp5.so => /cm/shared/apps/intel/compilers_and_libraries/2016.3.210/compiler/lib/intel64/libiomp5.so (0x00002aaaaaccf000)
+	libcurl.so.4 => /lib64/libcurl.so.4 (0x00002aaaab013000)
+	libdftbplus.so => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libdftbplus.so (0x00002aaaab27d000)
+	libfsockets.so => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libfsockets.so (0x00002aaaab7b0000)
+	libxmlf90.so => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libxmlf90.so (0x00002aaaab9b4000)
+	libthcbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libthcbox.so.1 (0x00002aaaabbda000)
+	libgpubox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libgpubox.so.1 (0x00002aaaad903000)
+	libtensorbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libtensorbox.so.1 (0x00002aaaadb16000)
+	libiobox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libiobox.so.1 (0x00002aaaadd32000)
+	libmoleculebox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libmoleculebox.so.1 (0x00002aaaadf41000)
+	libintbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libintbox.so.1 (0x00002aaaae154000)
+	libsqmbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libsqmbox.so.1 (0x00002aaace6c7000)
+	libgridbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libgridbox.so.1 (0x00002aaacecb7000)
+	libdftbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libdftbox.so.1 (0x00002aaacf1fd000)
+	libcibox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libcibox.so.1 (0x00002aaacf4df000)
+	libccbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libccbox.so.1 (0x00002aaacfbea000)
+	libsimbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libsimbox.so.1 (0x00002aaad00f8000)
+	liboptbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/liboptbox.so.1 (0x00002aaad0313000)
+	libsandboxbox.so.1 => /home/shared/zuehlsdorfflab/TeraChem/build/lib/libsandboxbox.so.1 (0x00002aaad0551000)
+	libcuda.so.1 => /lib64/libcuda.so.1 (0x00002aaad0762000)
+	libcudart.so.11.0 => /cm/shared/apps/cuda/11.1/lib64/libcudart.so.11.0 (0x00002aaad1e48000)
+	libcublas.so.11 => /cm/shared/apps/cuda/11.1/lib64/libcublas.so.11 (0x00002aaad20cd000)
+	libcufft.so.10 => /cm/shared/apps/cuda/11.1/lib64/libcufft.so.10 (0x00002aaad95a8000)
+	libcusparse.so.11 => /cm/shared/apps/cuda/11.1/lib64/libcusparse.so.11 (0x00002aaae790c000)
+	libcrypto.so.10 => /lib64/libcrypto.so.10 (0x00002aaaf598a000)
+	libssl.so.10 => /lib64/libssl.so.10 (0x00002aaaf5dec000)
+	libstdc++.so.6 => /cm/local/apps/gcc/5.1.0/lib64/libstdc++.so.6 (0x00002aaaf605e000)
+	libm.so.6 => /lib64/libm.so.6 (0x00002aaaf63d8000)
+	libcilkrts.so.5 => /cm/shared/apps/intel/compilers_and_libraries/2016.3.210/compiler/lib/intel64/libcilkrts.so.5 (0x00002aaaf66da000)
+	libgcc_s.so.1 => /cm/local/apps/gcc/5.1.0/lib64/libgcc_s.so.1 (0x00002aaaf6915000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00002aaaf6b2c000)
+	libc.so.6 => /lib64/libc.so.6 (0x00002aaaf6d48000)
+	/lib64/ld-linux-x86-64.so.2 (0x00002aaaaaaab000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00002aaaf7115000)
+	libidn.so.11 => /lib64/libidn.so.11 (0x00002aaaf7319000)
+	libssh2.so.1 => /lib64/libssh2.so.1 (0x00002aaaf754c000)
+	libssl3.so => /lib64/libssl3.so (0x00002aaaf7779000)
+	libsmime3.so => /lib64/libsmime3.so (0x00002aaaf79cb000)
+	libnss3.so => /lib64/libnss3.so (0x00002aaaf7bf2000)
+	libnssutil3.so => /lib64/libnssutil3.so (0x00002aaaf7f1f000)
+	libplds4.so => /lib64/libplds4.so (0x00002aaaf814f000)
+	libplc4.so => /lib64/libplc4.so (0x00002aaaf8353000)
+	libnspr4.so => /lib64/libnspr4.so (0x00002aaaf8558000)
+	libgssapi_krb5.so.2 => /lib64/libgssapi_krb5.so.2 (0x00002aaaf8796000)
+	libkrb5.so.3 => /lib64/libkrb5.so.3 (0x00002aaaf89e3000)
+	libk5crypto.so.3 => /lib64/libk5crypto.so.3 (0x00002aaaf8ccc000)
+	libcom_err.so.2 => /lib64/libcom_err.so.2 (0x00002aaaf8eff000)
+	liblber-2.4.so.2 => /lib64/liblber-2.4.so.2 (0x00002aaaf9103000)
+	libldap-2.4.so.2 => /lib64/libldap-2.4.so.2 (0x00002aaaf9312000)
+	libz.so.1 => /lib64/libz.so.1 (0x00002aaaf9567000)
+	libifport.so.5 => /cm/shared/apps/intel/oneapi/2021/compiler/2021.1.1/linux/compiler/lib/intel64_lin/libifport.so.5 (0x00002aaaf977d000)
+	libifcoremt.so.5 => /cm/shared/apps/intel/oneapi/2021/compiler/2021.1.1/linux/compiler/lib/intel64_lin/libifcoremt.so.5 (0x00002aaaaaaf5000)
+	libimf.so => /cm/shared/apps/intel/compilers_and_libraries/2016.3.210/compiler/lib/intel64/libimf.so (0x00002aaaf99ab000)
+	libsvml.so => /cm/shared/apps/intel/compilers_and_libraries/2016.3.210/compiler/lib/intel64/libsvml.so (0x00002aaaf9ea9000)
+	libintlc.so.5 => /cm/shared/apps/intel/compilers_and_libraries/2016.3.210/compiler/lib/intel64/libintlc.so.5 (0x00002aaafadb5000)
+	librt.so.1 => /lib64/librt.so.1 (0x00002aaafb021000)
+	libcublasLt.so.11 => /cm/shared/apps/cuda/11.1/lib64/libcublasLt.so.11 (0x00002aaafb229000)
+	libkrb5support.so.0 => /lib64/libkrb5support.so.0 (0x00002aab08ff3000)
+	libkeyutils.so.1 => /lib64/libkeyutils.so.1 (0x00002aab09203000)
+	libresolv.so.2 => /lib64/libresolv.so.2 (0x00002aab09407000)
+	libsasl2.so.3 => /lib64/libsasl2.so.3 (0x00002aab09620000)
+	libselinux.so.1 => /lib64/libselinux.so.1 (0x00002aab0983d000)
+	libcrypt.so.1 => /lib64/libcrypt.so.1 (0x00002aab09a64000)
+	libpcre.so.1 => /lib64/libpcre.so.1 (0x00002aab09c9b000)
+	libfreebl3.so => /lib64/libfreebl3.so (0x00002aab09efd000)
+#################################################################################################
+
+Cannot find license.dat file in the TeraChem installation directory /home/shared/zuehlsdorfflab/TeraChem/build
+
+
+TRYING THE NETWORK LICENSE...
+Connecting to license server '54.208.252.40' port '8877'...
+Jobname: snapshot
+Scratch directory: ./scr.snapshot
+Random number seed: 1101005360
+
+XYZ coordinates snapshot.xyz
+Molden File Output: ./scr.snapshot/snapshot.molden
+Using basis set: 6-31+gs
+dmrgstart not found
+Spin multiplicity: 1
+DIIS will use up to 10 vectors.
+Condition number limit for the DIIS overlap matrix is            0
+WF convergence threshold: 1.00e-05
+Using DIIS algorithm to converge WF
+Maximum number of SCF iterations: 55
+Incremental fock with rebuild every 8 iterations
+Will switch to conventional Fock if diffuse functions are detected
+X-matrix tolerance: 1.00e-04
+PRECISION: DYNAMIC
+DFT Functional requested: wb97x
+Method: wB97X
+  wB97X exchange/correlation functional:  1.0
+  Full range Hartree-Fock exchange:       0.157706
+  LR Hartree-Fock exchange:               0.842294
+  Range Correction Scaling:               0.300 a.u. 
+Wavefunction: RESTRICTED
+DFT grid type: 1
+Using dynamic DFT grids.
+Initial guess generated by maximum overlap
+point charges coordinates file: ptcharges.xyz
+
+
+********************************************
+***** SINGLE POINT ENERGY CALCULATIONS *****
+********************************************
+*************WARNING***************
+Unrecognized or unnecessary keywords:
+These are being ignored.
+   safemode no
+***********************************
+
+using 2 out of 2 CUDA devices
+   Device 0:     GeForce RTX 3080, 10018MB, CC 8.6 -- CPU THREAD 0
+   Device 1:     GeForce RTX 3080, 10018MB, CC 8.6 -- CPU THREAD 1
+-------------------------------------------------------------------
+ CPU Memory Available: 24009.88 MegaWords 
+ GPU Memory Available: 996.26 MegaWords 
+ Maximum recommended basis set size: 11200 basis functions
+ (limited by GPU memory)
+-------------------------------------------------------------------
+Connected!
+Checking your license...
+
+**************************************************************
+  Greetings, Martinez Group! You have 1000 licenses in total
+  IN USE: 10
+  AVAILABLE: 990
+**************************************************************
+
+
+
+Basis set:       6-31+gs
+Total atoms:     58
+Total charge:    1
+Total electrons: 200 (100-alpha, 100-beta)
+Number electrons modeled by ECPs: 0
+Total orbitals:  592
+Total AO shells: 284 (172 S-shells; 84 P-shells; 28 D-shells; 0 F-shells; 0 G-shells)
+Spin multiplicity: 1
+Nuclear repulsion energy (QM atoms): 2443.771188832095 a.u.
+
+Number of MM point charges: 11322
+Total charge from MM point charges: -0.00e
+
+
+**********************************************************
+*** WARNING! USING DEFAULT VDW PARAMETERS FOR QM ATOMS ***
+**********************************************************
+   TYPE       SIGMA       EPSILON
+     N      1.850000      0.200000
+     N      1.850000      0.200000
+     N      1.850000      0.200000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     C      2.060000      0.080000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+     H      1.320000      0.022000
+Setting up the DFT grid...
+time to set the grid = 0.03 s
+DFT grid points: 57180 (985 points/atom)
+Setting up the DFT grid...
+time to set the grid = 0.08 s
+DFT grid points: 159011 (2741 points/atom)
+
+************************************* WARNING *************************************
+ 24 out of 592 eigenvalues of the overlap matrix are smaller than xtol = 1.0e-04
+ and will be flushed to zero. In many cases this is caused by bad geometry of the
+ molecule, Cartesian basis sets, or the use of diffuse basis functions. 
+ Try using a spherical basis representation 'sphericalbasis yes'. If the SCF procedure does not
+ converge, increase the threshold by setting 'xtol' to 1.0e-03 or 1.0e-02 and/or
+ decrease the coulomb and exchange integral screening thresholds 'threall' 
+ up to 1.0e-15 or 1.0e-16. In addition, you can try to loosen the the WF 
+ convergence threshold, perform several geometry optimization steps, and run the 
+ calculations again with the new geometry. You can also try to switch to double
+ precision instead of mixed (default) or single precision.
+***********************************************************************************
+
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change      Electrons        XC Energy           Energy        Time(s)
+----------------------------------------------------------------------------------------------------------
+Purifying guess...Purification run on GPU (mixed precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+THRESPDP set to 1.00e+00
+                >>> SWITCHING TO GRID 1 <<<
+   1     0.3515011418   -1450.7690688279   200.0030885703  -108.6308253382   -1450.7690688279     2.89  
+                >>> SWITCHING TO GRID 0 <<<
+   2     0.2517208220      -2.0857930208   200.0065524829  -119.5448213461   -1452.8548618487     1.21  
+   3     0.5294303063     +46.8752946235   200.0052882241  -117.1738411253   -1405.9795672252     1.31  
+   4     0.0579281109     -59.6679812033   200.0062390850  -115.8134738752   -1465.6475484286     1.31  
+   5     0.0986812557      +0.0684408392   200.0064305382  -115.4138171224   -1465.5791075894     1.24  
+   6     0.0271816367      -0.5108469650   200.0059541689  -115.5073019233   -1466.0899545544     1.26  
+   7     0.0120423077      -0.0278908266   200.0058358094  -115.5191400561   -1466.1178453811     1.26  
+   8     0.0017836239      -0.0078507434   200.0057471574  -115.5638497859   -1466.1256961245     1.29  
+THRESPDP set to 2.25e-04
+                >>> SWITCHING TO GRID 1 <<<
+   9     0.0021325711      +0.0074467314   200.0007657267  -115.5502701757   -1466.1182493931     2.73  
+  10     0.0010111776      -0.0002268944   200.0007642437  -115.5411900147   -1466.1184762876     2.16  
+  11     0.0004422675      -0.0001216872   200.0007623554  -115.5288729009   -1466.1185979747     2.20  
+  12     0.0002032511      -0.0000129943   200.0007619447  -115.5304660580   -1466.1186109690     2.05  
+  13     0.0000716642      -0.0000027611   200.0007621934  -115.5326127087   -1466.1186137301     2.06  
+  14     0.0000197015      -0.0000006126   200.0007620081  -115.5323431744   -1466.1186143427     1.85  
+  15     0.0000198689      -0.0000004054   200.0007620411  -115.5322217220   -1466.1186147480     2.37  
+  16     0.0000057719      -0.0000000469   200.0007620126  -115.5322889444   -1466.1186147950     2.35  
+----------------------------------------------------------------------------------------------------------
+FINAL ENERGY: -1466.1186147950 a.u.
+WARNING: Final energy is higher than the lowest energy by    0.0070813.
+HOMO-LUMO GAP: 6.133 eV
+CENTER OF MASS: {-0.339392, 2.883530, -2.069454} ANGS
+QM  DIPOLE MOMENT: {1.085102, -1.696603, 0.322709} (|D| = 2.039620) DEBYE
+MM  DIPOLE MOMENT: {-18.704820, -40.195323, 29.049830} (|D| = 53.004027) DEBYE
+TOT DIPOLE MOMENT: {-17.619717, -41.891926, 29.372539} (|D| = 54.112234) DEBYE
+Writing out molden info
+
+Running Mulliken population analysis...
+
+ Generating 2nd functional diffs
+
+  Restricted TDDFT (RPA) Parameters
+--------------------------------------------
+Number of occupied orbitals:           100
+Number of virtual orbitals:            468
+Number of molecular orbitals:          568
+Number of basis functions:             592
+Multiplicity of target state:      singlet
+
+  Nonsymmetric Davidson Diagonalization Parameters
+----------------------------------------------------
+Number of roots to find:                    2
+Number of guess vectors:                    3
+Maximum subspace size:                     20
+Number of vectors to save:                  2
+Collapse vectors per root:                  2
+Number of excitations:                  93600
+Maximum Davidson iterations:               50
+Residual convergence:                 1.0e-04
+Orthogonality tolerance:              1.0e-12
+Reorthogonalization rate:                   8
+
+     Davidson Dynamic Precision Parameters
+-----------------------------------------------
+SP Residual convergence:              1.0e-04
+Sigma vector THRESPDP:                2.3e-04
+
+Davidson memory usage:  35.26 MB
+
+Guess Vectors:
+  100 -> 101 : D -> V :     0.225402
+   99 -> 101 : D -> V :     0.229579
+   98 -> 101 : D -> V :     0.274471
+
+  Root           Eigenvalue       Energy Change        Residual
+-------------------------------------------------------------------
+Iteration:    0   Subspace Size:    3
+Root: 1:         0.12580322         0.12580322         0.13491134  
+Root: 2:         0.13096105         0.13096105         0.15041812  
+
+Iteration:    1   Subspace Size:    5
+Root: 1:         0.10810714        -0.01769608         0.05183487  
+Root: 2:         0.11262890        -0.01833215         0.05060755  
+
+Iteration:    2   Subspace Size:    7
+Root: 1:         0.10347615        -0.00463100         0.02920273  
+Root: 2:         0.10790914        -0.00471976         0.02970916  
+
+Iteration:    3   Subspace Size:    9
+Root: 1:         0.10278376        -0.00069239         0.01125711  
+Root: 2:         0.10720911        -0.00070003         0.01120985  
+
+Iteration:    4   Subspace Size:   11
+Root: 1:         0.10265136        -0.00013240         0.00491938  
+Root: 2:         0.10706382        -0.00014529         0.00494964  
+
+Iteration:    5   Subspace Size:   13
+Root: 1:         0.10263254        -0.00001881         0.00200565  
+Root: 2:         0.10704481        -0.00001901         0.00207986  
+
+Iteration:    6   Subspace Size:   15
+Root: 1:         0.10262859        -0.00000395         0.00085971  
+Root: 2:         0.10704048        -0.00000433         0.00088502  
+
+Iteration:    7   Subspace Size:   17
+Root: 1:         0.10262792        -0.00000067         0.00042247  
+Root: 2:         0.10703976        -0.00000072         0.00044944  
+
+Iteration:    8   Subspace Size:   19
+Collapsing subspace to 4 vectors
+Rebuilding sigma vectors
+
+Iteration:    9   Subspace Size:    4
+Root: 1:         0.10262778         0.00000001         0.00019999  
+Root: 2:         0.10703959         0.00000001         0.00021536  
+
+Iteration:   10   Subspace Size:    6
+Root: 1:         0.10262774        -0.00000003         0.00011108  
+Root: 2:         0.10703955        -0.00000004         0.00011440  
+
+Iteration:   11   Subspace Size:    8
+Root: 1:         0.10262772        -0.00000002         0.00008347  Converged
+Root: 2:         0.10703953        -0.00000002         0.00008735  Converged
+
+Davidson has converged in single precision
+Collapsing subspace to 2 vectors
+Rebuilding sigma vectors in mixed precision
+
+Iteration:   12   Subspace Size:    2
+Root: 1:         0.10262773         0.00000000         0.00008347  Converged
+Root: 2:         0.10703953         0.00000000         0.00008736  Converged
+
+Davidson converged in 12 iterations
+29 sigma vectors were formed
+23 sigma vectors were formed in single precision
+2 sigma vectors were formed in mixed precision
+
+  Root   Total Energy (a.u.)   Ex. Energy (a.u.)     Ex. Energy (eV)     Ex. Energy (nm)
+-----------------------------------------------------------------------------------------
+     1      -1466.01598707          0.10262773          2.79264203        443.96746623
+     2      -1466.01157527          0.10703953          2.91269326        425.66864989
+
+Unrelaxed excited state dipole moments:
+
+  Root       Dx         Dy         Dz         |D|  (Debye)
+------------------------------------------------------------
+     1    -3.1220    -2.9990    -3.3755     5.4895
+     2    -1.5816     0.2888     6.8245     7.0113
+
+Transition dipole moments:
+
+  Root       Tx         Ty         Tz         |T| (a.u.)
+----------------------------------------------------------
+     1    2.7772313391   -0.7345442633   -1.8861413994    3.4365823959
+     2   -1.2877306207   -0.8831353946   -2.8400373352    3.2409860139
+
+Root 1: Largest CI coefficients:
+  100 -> 101 : X (D -> V) :   0.904989     Y (D <- V) :  -0.031936
+   99 -> 101 : X (D -> V) :   0.313955     Y (D <- V) :  -0.017372
+   94 -> 101 : X (D -> V) :   0.180215     Y (D <- V) :  -0.004522
+
+Root 2: Largest CI coefficients:
+   99 -> 101 : X (D -> V) :   0.909187     Y (D <- V) :  -0.034281
+  100 -> 101 : X (D -> V) :  -0.302675     Y (D <- V) :   0.004863
+   93 -> 101 : X (D -> V) :   0.157273     Y (D <- V) :  -0.004068
+   94 -> 101 : X (D -> V) :  -0.105209     Y (D <- V) :   0.002933
+
+  Final Excited State Results:
+
+  Root   Total Energy (a.u.)   Ex. Energy (eV)   Osc. (a.u.)   Max CI Coeff.      Excitation
+------------------------------------------------------------------------------------------------------
+     1       -1466.01598707        2.79264203       0.8080        0.904989     100 -> 101 : X (D -> V)
+     2       -1466.01157527        2.91269326       0.7496        0.909187      99 -> 101 : X (D -> V)
+
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+        0.00000000000000         0.00000000000000         0.00000000000000
+Total processing time: 155.76 sec 
+
+ Job finished: Tue Oct  4 02:48:16 2022
+
