@@ -1,0 +1,35 @@
+QMMM equilibration at 300K with Langevin coupling for 20 ps at dt=0.5fs
+ &cntrl
+  imin     = 0,      ! do MD (no minimization)
+  irest    = 1,      ! trajectory restart
+  ntx      = 5,      ! coordinates and velocities are read in
+  dt       = 0.0005  ! 0.5fs time step
+  cut      = 999.9,  ! non-bonded cutoff
+  ntb      = 0,      ! no periodic boundary conditions
+  ntt      = 3,      ! use Langevin coupling thermostat ! Could set this to zero for NVE dynamics
+  gamma_ln    = 1.0,    ! time constant for langevin thermostat 1.0ps
+  temp0    = 300.0,  ! temp = 300K
+  ntpr     = 10,    ! logfile print frequency
+  ntwx     = 4,    ! coordinate writing frequency. Print every 2 fs
+  ntwr     = 100,   ! restart file writing frequency; every 50 fs
+  nstlim   = 24000,  ! number of steps 12 ps trajector
+  nscm     = 1000,   ! COM motion removal frequency
+  jfastw   = 4,      ! do not use routines for fast triangulated water
+  ioutfm   = 1,      ! NetCDF MDCRD.
+  ifqnt  = 1,      ! QM/MM
+/
+&ewald                    
+  dsum_tol = 0.000001,  ! Increase PME accuracy
+/
+&qmmm
+  qmmask       = ':1', ! residue 1 is treated quantum mechanically  
+  qm_theory = 'EXTERN',
+  qmcharge = 0
+  spin = 1
+/
+ &tc
+  mpi = 0
+  use_template = 1
+  executable = 'terachem',
+/
+ &end
