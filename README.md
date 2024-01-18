@@ -1,7 +1,9 @@
 ## CV Symmetry Breaking
-#### This repository contains computational supporting information for the manuscript "First-principles Modeling of the Absorption spectrum of Crystal Violet in Solution - The Importance of Environmentally-driven Symmetry Breaking".
-![image](https://github.com/tjz21/CV_symmetry_breaking/assets/117040881/6de39f2e-6ca6-4154-a753-013d5831a249)
+This repository contains computational supporting information for the manuscript "First-principles Modeling of the Absorption spectrum of Crystal Violet in Solution - The Importance of Environmentally-driven Symmetry Breaking".
 
+<p align="center">
+  <img src="[http://some_place.com/image.png](https://github.com/tjz21/CV_symmetry_breaking/assets/117040881/6de39f2e-6ca6-4154-a753-013d5831a249)" width='25' />
+</p>
 
 ```bash
 CV_symmetry_breaking
