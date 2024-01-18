@@ -2,7 +2,7 @@
 This repository contains computational supporting information for the manuscript "First-principles Modeling of the Absorption spectrum of Crystal Violet in Solution - The Importance of Environmentally-driven Symmetry Breaking".
 
 <p align="center">
-  <img src="https://github.com/tjz21/CV_symmetry_breaking/assets/117040881/6de39f2e-6ca6-4154-a753-013d5831a249" width='150' />
+  <img src="https://github.com/tjz21/CV_symmetry_breaking/assets/117040881/6de39f2e-6ca6-4154-a753-013d5831a249" width='200' />
 </p>
 
 ```bash
